@@ -9,7 +9,7 @@
     <link rel="Stylesheet" href="../css/Employee_Payroll.css">
 </head>
 <body>
-    <header>
+    <header class="logo-header">
         <div class="logo-Container">
             <img class="img-logo"   src="../assests/emplogo.webp">
             <div class="header-logo">
@@ -19,17 +19,45 @@
         </div>
     </header>
     
-    <!--UC-2-->
+    <!--UC-2 Creating Header form-->
     <div class="div-form">
         <form class="form-content" onclick="save(event); return false">
             <header class="form-header">Employee Payroll Form</header>
             <div class="form-field">
-                <label class="label" for="name">Name</label>
-                <input class="input" type="text" id="name" name="name" placeholder="Your Name" required>
+                <label class="text-label" for="name">Name</label>
+                <input class="text-input" type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
         </form>
-    </div>
-</body>
-</html>
+    
+    <!--UC-3 Adding Radio Buttons-->
+        <div class="form-field">
+            <label class="text-label" for="name">Profile Photo</label>
+            <div class="profile-radio-content">
+                <label>
+                <input type="radio" id="profile1" name="profile" required value="../assets/pro1.jpg">
+                <img class="profile" src="../assests/profile1.jpg">
+                </label>
+            </div>
+            <div class="profile-radio-content">
+                <label>
+                <input type="radio" id="profile1" name="profile" required value="../assets/pro2.jpg">
+                <img class="profile" src="../assests/pro2.webp">
+                </label>
+            </div>
+            <div class="profile-radio-content">
+                <label>
+                <input type="radio" id="profile1" name="profile" required value="../assets/pro3.jpg">
+                <img class="profile" src="../assests/pro3.jpg">
+                </label>
+            </div>
+            <div class="profile-radio-content">
+                <label>
+                <input type="radio" id="profile1" name="profile" required value="../assets/pro4.jpg">
+                <img class="profile" src="../assests/pro4.png">
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>
