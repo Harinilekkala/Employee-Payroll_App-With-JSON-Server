@@ -1,5 +1,6 @@
+//Salary Range
 const salary = document.querySelector('#salary');
-const outputSalary = document.querySelector('.salary-range');
+const message = document.querySelector('.salary-output');
 salary.addEventListener('input', function(){
-    outputSalary.textContent = salary.value; 
-})
+    message.textContent = salary.value;
+});
