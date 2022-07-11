@@ -19,7 +19,7 @@
         </div>
     </header>
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event);return false">
+    <form class="form" action="#" onsubmit="save(event);return false">
    
     <!--UC-2 Creating Header form-->
     <div class="form-head"> Employee Payroll form</div>
@@ -27,7 +27,7 @@
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Enter Your Name" required>                
             </div>
-            <!--uc3-->
+    <!--uc3-->
             <div class="row-content">
                 <label class="label text" for="Profile">Profile image</label>
                 <div class="profile-radio-content">
@@ -53,7 +53,40 @@
                     </label>
                 </div>
             </div>  
-        </form>
+        
+    <!-- UC4 Adding gender, departments and salary-->
+    <!-- UC 4 -->
+            <div class="row-content">
+                <label class="label text" for="gender" value="male">Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label class="text" for="female">Female</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="department">Department</label>
+                <div>
+                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input class="checkbox" type="checkbox" id="sale" name="sales" value="Sales">
+                    <label class="text" for="hr">Sales</label>
+                    <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance">
+                    <label class="text" for="hr">Finance</label>
+                    <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="Engineer">
+                    <label class="text" for="hr">Engineer</label>
+                    <input class="checkbox" type="checkbox" id="others" name="others" value="Others">
+                    <label class="text" for="hr">Others</label>
+                </div>
+            </div>
+    <div class="row">
+        <label class="label" for="salary">Salary</label>
+        <input class="salary" type="range" id="salary" name="salary" min="10000" max="100000" step="1000" value="50000">
+        <output class="salary-output label" for="salary">50000</output>
     </div>
+</div>
+</form>
+<script src="../js/Emp;oyee Payrol.js"></script>
 </body>
 </html>
