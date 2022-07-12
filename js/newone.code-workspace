@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Learn_HTML_CSS"
+		},
+		{
+			"path": "..\\..\\Folder-Learn-HTML-CSS\\pages"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pages"
+	}
+}
