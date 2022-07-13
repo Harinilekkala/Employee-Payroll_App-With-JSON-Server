@@ -24,34 +24,32 @@ class EmployeePayrollData{
         this._gender = gender;
     }
 
-    get department(){return this._department;}
-    set department(department){
-        this._department;
+    get Department(){return this._Department;}
+    set Department(Department){
+        this._Department=Department;
     }
 
     get salary(){return this._salary;}
     set salary(salary){
-        this._salary;
+        this._salary=salary;
     }
 
-    get note(){return this._note;}
-    set note(note){
-        this._note;
+    get Notes(){return this._Notes;}
+    set Notes(Notes){
+        this._Notes=Notes;
     }
 
-    get startDate(){return this._startDate;}
-    set startDate(startDate){
-        this._startDate;
+    get StartDate(){return this._StartDate;}
+    set StartDate(StartDate){
+        this._StartDate=StartDate;
     }
 
     //method
     toString() {
-        const options = {year: 'numeric',month:'long',day: 'numeric'};
-        const empDate = !this.startDate ? "undefined":
-                         this.startDate.toLocaleDateString("en-US",options);
+        
         return "id =" +this.id + ", name' " + this.name + ", gender=' " +this.gender +
-               ", profilePic= ' " +this.profilePic +", department=" +this.department +
-               ", salary=" +this.salary + ", startDate=" +empDate + ", note=" +this.note;
+               ", profilePic= ' " +this.profilePic +", Department=" +this.Department +
+               ", salary=" +this.salary + ", StartDate=" +this.StartDate + ", note=" +this.note;
     }
 }
 
