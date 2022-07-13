@@ -104,7 +104,7 @@ const getSelectedValue = (id) => {
     let value = document.getElementById(id).value;
     return value;
 }
-
+/* Reset Entered VAlues*/
 const resetValues = () => {
     satValue('#name','');
     unSelectValue('[name=profile]');
