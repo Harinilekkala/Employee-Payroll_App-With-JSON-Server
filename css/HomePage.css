@@ -2,11 +2,20 @@
 body{
     margin: 0;
     height: 100%;
+    font-family: 'Roboto';
+    font-size: 16px;
+    background: whitesmoke;
 }
 
 .header{
-    padding: 15px 0;
-    background-color: #ffffff;
+    border: 0px solid red;
+    background-color: aliceblue;
+    width: 100%;
+    align-content: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-content{
@@ -38,7 +47,7 @@ body{
 }
 
 .emp-payroll{
-    color: #42515f;
+    color: #1c4772;
 }
 
 *{
@@ -49,7 +58,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 80px);
-    background-color: #f7f7f7;
+    background-color: white;
     padding: 30px 0 10px;
     box-sizing: border-box;
 }
@@ -94,6 +103,7 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+
 /*--------------------uc3---------------------------*/
 .table-main {
     width: 80%;
@@ -102,33 +112,41 @@ body{
 }
 .table {
     width: 100%;
+    border: 0px solid red;
     border-collapse: separate;
-    border-spacing: 0 15px;
+    border-spacing: 0px 15px;
     min-width: 800px;
 }
 td, th {
+    border: 0px solid rebeccapurple;
     text-align: left;
     padding: 5px 8px;
+
 }
 th {
-    background: #76797b 0% 0% no-repeat padding-box;
-    border-radius: 3px 3px 0px 0px;
+    background: rgb(44, 50, 79);
+    color: white;
+    border-radius: 3px;
     text-align: left;
-    font: normal normal normal 22px/29px Roboto;
-    letter-spacing: 0px;
-    color: #ffffff;
-    /*text-transform: uppercase;*/
+    font-family: 'Roboto';
+    text-transform: uppercase;
     opacity: 1;
-    border: 0px solid #dddddd;
+    height: 50px;
+    
 }
 tr:not(:first-child){
     background: white;
     border: 2px solid gray;
     border-radius: 3px;
+    box-shadow: 3px 3px 3px gray;
+
+    
 }
 .actions{
-    display: table-cell;
-    align-items: center;
+    margin-left: 15px;
+   height: 15px;
+   width: 15px;
+   opacity: 0.5;
 }
 td{
     color: #3d3d3d;
@@ -146,7 +164,7 @@ td img{
     cursor: pointer;
 }
 .dept-label{
-    background: skyblue;
+    background: greenyellow;
     border-radius: 40px;
     width: fit-content;
     padding: 1px 7px;
@@ -155,4 +173,5 @@ td img{
     display: inline-block;
     font-weight: 300;
     margin-bottom: 8px;
+    
 }
