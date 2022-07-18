@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="link Icon" href="../assests/home.jpg">
-    <link rel="stylesheet" href="../css/HomePage.css">
-    <link href="../assests/home.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Employee Payroll App</title>
-</head>
-<body>
-    <!-----------------------------UC1 ------------------->
-    <header class="header-content header">
-        <div class="logo-content">
-            <img src="../assests/Logo (1).jpg" alt="logo">
-            <div>
-                <span class="emp-text">EMPLOYEE</span><br>
-                <span class="emp-text emp-payroll">PAYROLL</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/Homestyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Josefin+Sans:wght@300&family=Pacifico&display=swap" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>Employee Payroll-Home</title>
+        <script src="../js/Home-Local.js"></script>
+        <script src="../js/EmployeeModel.js"></script>
+        <script src="../js/SiteProperties.js"></script>
+        <script src="../js/Utility.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--UC1-to create an Employee Payroll System Home Page UI-->
+            <div class="header-content">
+                <img src="../assests/Logo (1).jpg">
+                <div>
+                    <h3 class="Employee">Employee</h3>
+                    <h3 class="Payroll">Payroll</h3>
+                </div>
             </div>
+        </header>
+        <!--UC2 Employee payroll form Header and name-->
+        <div class="main-content">
+                <div class="employee-details">Employee Details
+                    <div class="emp-count">1</div>
+                </div>
+                <a href="../pages/AddEmployee.html" class="add-button" target="_blank">
+                    <img src="../assests/add-24px.svg" alt="">Add User</a>
         </div>
-    </header>
-    <!-----------------------uc2Create header section and add employee button-->
-    <div class="main-content">
-        <div class="header-content">
-            <div class="emp-detail-text">
-                Employee Details <div class="emp-count">10</div>
-            </div>
-            <a href="../pages/Payroll_Form.html" class="add-button">
-            <img src="" alt="">Add User</a> 
-        </div><!-------header content-->
-        <!---------------uc3 view payroll details in tabular format----->
-        <div class="table-main">
+        <div class="table main">
             <table id="table-display" class="table">
-                <!--------the content pasted in homepage.js------->
             </table>
-        </div><!----table main-->
-    </div><!---main content-->
-    <!--Adding All The links Here-->
-    <script src="../js/HomePage.js"></script>
-    <script src="../js/Utility.js"></script>
-    <script src="../js/Site_Properties.js"></script>
-    <script src="../js/EmployeePayRoll.js"></script>  
-</body>
+        </div> 
+    </div>
+    </body>
 </html>
