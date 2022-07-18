@@ -132,3 +132,18 @@ td img {
     font-weight: 300;
     margin-bottom: 8px;
 }
+
+@media screen and (max-width:960px){
+    .header-content{
+        width: 35%;
+    }
+}
+@media screen and (max-width:480px){
+    .header-content{
+        width: 50%;
+    }
+    .main-content
+    {
+        width: 100%;
+    }
+}
